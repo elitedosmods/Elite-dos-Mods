@@ -2,10 +2,20 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Elite dos Mods - Sucesso no Login</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Elite dos Mods - Sucesso</title>
+    <link rel="icon" type="image/png" href="logo.png"> 
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&display=swap" rel="stylesheet">
     <style>
+        /* CRÍTICO: Regra para eliminar o scroll excessivo e margens padrão */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Garante que não apareça barra de rolagem */
+        }
+        
         :root {
             /* Definindo variáveis de cor para fácil manutenção */
             --color-primary: #1976D2; 
@@ -19,20 +29,20 @@
             text-align: center;
             background: linear-gradient(135deg, var(--color-background), #e5e9ec); 
             color: var(--color-text);
-            min-height: 100vh;
+            /* Removemos o padding desnecessário daqui */
             display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 20px;
+            align-items: center; /* Centraliza verticalmente o conteúdo */
+            justify-content: center; /* Centraliza horizontalmente o conteúdo */
         }
         .container {
             background-color: #ffffff;
-            padding: 40px;
+            padding: 40px; /* Mantém o padding interno */
             border-radius: 16px;
             box-shadow: 0 10px 30px var(--color-shadow);
             max-width: 550px;
             width: 100%;
+            /* NOVO: Margem automática vertical e horizontal para garantir centralização perfeita */
+            margin: auto; 
         }
         .logo {
             max-width: 350px; 
@@ -56,10 +66,9 @@
             font-weight: 300;
         }
         
-        /* NOVO: Regra CSS para forçar o negrito dentro do parágrafo */
         p strong {
             font-weight: 700; 
-            color: var(--color-text); /* Garante que o texto em negrito seja escuro */
+            color: var(--color-text);
         }
         
         .instruction {
@@ -103,7 +112,7 @@
         
         <h1>✅ LOGIN EFETUADO COM SUCESSO!</h1>
         
-        <p>O aplicativo desktop Elite dos Mods - Gerenciador" está agora conectado.</p>
+        <p>O aplicativo desktop <strong>"Elite dos Mods - Gerenciador"</strong> agora está  conectado.</p>
         
         <p class="instruction">Você pode fechar esta janela e voltar ao aplicativo.</p>
 
@@ -111,5 +120,3 @@
     </div>
 </body>
 </html>
-
-
